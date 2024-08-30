@@ -17,6 +17,8 @@
 		BB6200852C80E5A400395F76 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6200842C80E5A400395F76 /* ProfileView.swift */; };
 		BB62008A2C81E9CE00395F76 /* AddFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6200892C81E9CE00395F76 /* AddFriendsView.swift */; };
 		BB62008D2C81F28E00395F76 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62008C2C81F28E00395F76 /* UsersView.swift */; };
+		BB62008F2C822A3500395F76 /* FriendProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62008E2C822A3500395F76 /* FriendProfileView.swift */; };
+		BB6200922C822AFF00395F76 /* ProfileSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6200912C822AFF00395F76 /* ProfileSectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		BB6200842C80E5A400395F76 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		BB6200892C81E9CE00395F76 /* AddFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsView.swift; sourceTree = "<group>"; };
 		BB62008C2C81F28E00395F76 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		BB62008E2C822A3500395F76 /* FriendProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileView.swift; sourceTree = "<group>"; };
+		BB6200912C822AFF00395F76 /* ProfileSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 		BB6200742C80B99E00395F76 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BB6200902C822AF300395F76 /* Profile */,
 				BB62008B2C81F28100395F76 /* Users */,
 				BB62007A2C80BB3A00395F76 /* Posts */,
 			);
@@ -210,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				BB6200892C81E9CE00395F76 /* AddFriendsView.swift */,
+				BB62008E2C822A3500395F76 /* FriendProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -227,6 +233,14 @@
 				BB62008C2C81F28E00395F76 /* UsersView.swift */,
 			);
 			path = Users;
+			sourceTree = "<group>";
+		};
+		BB6200902C822AF300395F76 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BB6200912C822AFF00395F76 /* ProfileSectionView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,11 +315,13 @@
 			files = (
 				BB6200632C80B79C00395F76 /* ContentView.swift in Sources */,
 				BB62007C2C80BB7500395F76 /* PostRowView.swift in Sources */,
+				BB62008F2C822A3500395F76 /* FriendProfileView.swift in Sources */,
 				BB62008A2C81E9CE00395F76 /* AddFriendsView.swift in Sources */,
 				BB6200792C80BA1000395F76 /* FeedView.swift in Sources */,
 				BB6200612C80B79C00395F76 /* dooApp.swift in Sources */,
 				BB6200852C80E5A400395F76 /* ProfileView.swift in Sources */,
 				BB62007F2C80DE6F00395F76 /* MenuBarView.swift in Sources */,
+				BB6200922C822AFF00395F76 /* ProfileSectionView.swift in Sources */,
 				BB62008D2C81F28E00395F76 /* UsersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

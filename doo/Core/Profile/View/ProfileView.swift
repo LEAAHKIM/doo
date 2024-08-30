@@ -12,7 +12,7 @@ struct ProfileView: View {
         VStack(alignment: .leading) {
             addFriends
             //insert search bar here
-            profile
+            ProfileSectionView()
             friendsButton
             
             Text("\n productivity streak: ") +
@@ -33,18 +33,7 @@ struct ProfileView: View {
                 .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.black, lineWidth: 0.75))
         }
     }
-    
-    var profile: some View {
-        VStack {
-            RoundedRectangle(cornerRadius:15)
-                .frame(width: UIScreen.main.bounds.width / 1.5, height: UIScreen.main.bounds.height / 3)
-            Text("User")
-            Text("@username")
-                .font(.caption)
-                .foregroundColor(.gray)
-            }
-        }
-    
+        
     var addFriends: some View {
         VStack(alignment: .leading) {
             Text("add friends")

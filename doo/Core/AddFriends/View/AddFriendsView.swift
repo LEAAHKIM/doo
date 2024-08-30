@@ -11,19 +11,32 @@ struct AddFriendsView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Text("\n add friends")
+                    .bold()
                 ScrollView {
                     LazyVStack {
                         ForEach(0...25, id:\.self) { _ in
                             NavigationLink {
-                                ProfileView()
+                                FriendProfileView()
                             } label: {
                                 UsersView()
                             }}
                     }
                 }
+                .navigationBarBackButtonHidden(true)
+
             }
-            .navigationTitle("add friends")
-            .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+    
+    var GoBackToProfile: some View {
+        NavigationLink {
+            ProfileView()
+        } label: {
+            Image(systemName: "arrow.left")
+                .resizable()
+                .frame(width: 20, height: 16)
+                .foregroundColor(.black)
         }
     }
 }
