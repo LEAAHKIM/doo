@@ -11,6 +11,10 @@
 		BB6200632C80B79C00395F76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6200622C80B79C00395F76 /* ContentView.swift */; };
 		BB6200652C80B79D00395F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6200642C80B79D00395F76 /* Assets.xcassets */; };
 		BB6200682C80B79D00395F76 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB6200672C80B79D00395F76 /* Preview Assets.xcassets */; };
+		BB6200792C80BA1000395F76 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6200782C80BA1000395F76 /* FeedView.swift */; };
+		BB62007C2C80BB7500395F76 /* PostRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62007B2C80BB7500395F76 /* PostRowView.swift */; };
+		BB62007F2C80DE6F00395F76 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62007E2C80DE6F00395F76 /* MenuBarView.swift */; };
+		BB6200852C80E5A400395F76 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6200842C80E5A400395F76 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		BB6200622C80B79C00395F76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BB6200642C80B79D00395F76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB6200672C80B79D00395F76 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB6200782C80BA1000395F76 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		BB62007B2C80BB7500395F76 /* PostRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowView.swift; sourceTree = "<group>"; };
+		BB62007E2C80DE6F00395F76 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		BB6200842C80E5A400395F76 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				BB6200602C80B79C00395F76 /* dooApp.swift */,
 				BB6200622C80B79C00395F76 /* ContentView.swift */,
+				BB6200732C80B98C00395F76 /* Model */,
+				BB6200722C80B97D00395F76 /* Service */,
+				BB6200702C80B96A00395F76 /* Extensions */,
+				BB62006F2C80B96300395F76 /* Core */,
 				BB6200642C80B79D00395F76 /* Assets.xcassets */,
 				BB6200662C80B79D00395F76 /* Preview Content */,
 			);
@@ -65,6 +77,118 @@
 				BB6200672C80B79D00395F76 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB62006F2C80B96300395F76 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BB6200812C80E54800395F76 /* Profile */,
+				BB6200802C80E52700395F76 /* List */,
+				BB62007D2C80DE5E00395F76 /* MenuBar */,
+				BB6200752C80B9A400395F76 /* Feed */,
+				BB6200742C80B99E00395F76 /* Components */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BB6200702C80B96A00395F76 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB6200722C80B97D00395F76 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BB6200732C80B98C00395F76 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB6200742C80B99E00395F76 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BB62007A2C80BB3A00395F76 /* Posts */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BB6200752C80B9A400395F76 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				BB6200772C80B9DE00395F76 /* View */,
+				BB6200762C80B9C800395F76 /* ViewModels */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		BB6200762C80B9C800395F76 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BB6200772C80B9DE00395F76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB6200782C80BA1000395F76 /* FeedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB62007A2C80BB3A00395F76 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				BB62007B2C80BB7500395F76 /* PostRowView.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		BB62007D2C80DE5E00395F76 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				BB62007E2C80DE6F00395F76 /* MenuBarView.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		BB6200802C80E52700395F76 /* List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		BB6200812C80E54800395F76 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				BB6200832C80E59400395F76 /* ViewModel */,
+				BB6200822C80E59000395F76 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		BB6200822C80E59000395F76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB6200842C80E5A400395F76 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB6200832C80E59400395F76 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +262,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB6200632C80B79C00395F76 /* ContentView.swift in Sources */,
+				BB62007C2C80BB7500395F76 /* PostRowView.swift in Sources */,
+				BB6200792C80BA1000395F76 /* FeedView.swift in Sources */,
 				BB6200612C80B79C00395F76 /* dooApp.swift in Sources */,
+				BB6200852C80E5A400395F76 /* ProfileView.swift in Sources */,
+				BB62007F2C80DE6F00395F76 /* MenuBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
