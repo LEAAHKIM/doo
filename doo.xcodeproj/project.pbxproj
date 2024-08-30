@@ -15,6 +15,8 @@
 		BB62007C2C80BB7500395F76 /* PostRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62007B2C80BB7500395F76 /* PostRowView.swift */; };
 		BB62007F2C80DE6F00395F76 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62007E2C80DE6F00395F76 /* MenuBarView.swift */; };
 		BB6200852C80E5A400395F76 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6200842C80E5A400395F76 /* ProfileView.swift */; };
+		BB62008A2C81E9CE00395F76 /* AddFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6200892C81E9CE00395F76 /* AddFriendsView.swift */; };
+		BB62008D2C81F28E00395F76 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB62008C2C81F28E00395F76 /* UsersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		BB62007B2C80BB7500395F76 /* PostRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRowView.swift; sourceTree = "<group>"; };
 		BB62007E2C80DE6F00395F76 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
 		BB6200842C80E5A400395F76 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		BB6200892C81E9CE00395F76 /* AddFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendsView.swift; sourceTree = "<group>"; };
+		BB62008C2C81F28E00395F76 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,7 @@
 		BB62006F2C80B96300395F76 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BB6200862C81E9B300395F76 /* AddFriends */,
 				BB6200812C80E54800395F76 /* Profile */,
 				BB6200802C80E52700395F76 /* List */,
 				BB62007D2C80DE5E00395F76 /* MenuBar */,
@@ -115,6 +120,7 @@
 		BB6200742C80B99E00395F76 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				BB62008B2C81F28100395F76 /* Users */,
 				BB62007A2C80BB3A00395F76 /* Posts */,
 			);
 			path = Components;
@@ -191,6 +197,38 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		BB6200862C81E9B300395F76 /* AddFriends */ = {
+			isa = PBXGroup;
+			children = (
+				BB6200882C81E9BB00395F76 /* ViewModel */,
+				BB6200872C81E9B800395F76 /* View */,
+			);
+			path = AddFriends;
+			sourceTree = "<group>";
+		};
+		BB6200872C81E9B800395F76 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB6200892C81E9CE00395F76 /* AddFriendsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB6200882C81E9BB00395F76 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BB62008B2C81F28100395F76 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				BB62008C2C81F28E00395F76 /* UsersView.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,10 +301,12 @@
 			files = (
 				BB6200632C80B79C00395F76 /* ContentView.swift in Sources */,
 				BB62007C2C80BB7500395F76 /* PostRowView.swift in Sources */,
+				BB62008A2C81E9CE00395F76 /* AddFriendsView.swift in Sources */,
 				BB6200792C80BA1000395F76 /* FeedView.swift in Sources */,
 				BB6200612C80B79C00395F76 /* dooApp.swift in Sources */,
 				BB6200852C80E5A400395F76 /* ProfileView.swift in Sources */,
 				BB62007F2C80DE6F00395F76 /* MenuBarView.swift in Sources */,
+				BB62008D2C81F28E00395F76 /* UsersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

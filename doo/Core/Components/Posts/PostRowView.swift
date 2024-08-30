@@ -9,7 +9,6 @@ import SwiftUI
 
 struct PostRowView: View {
     var body: some View {
-        //Divider()
         VStack(alignment: .leading, spacing:4) {
             profile
             post
